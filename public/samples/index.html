@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScriptMN User Group: Introduction to TypeScript</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+</head>
+<body>
+    <h1>TypeScript Examples</h1>
+    <div class="examples">
+        <button id="funcs">Functions</button>
+        <button id="zoo">Zoo</button>
+        <button id="mixins">Mixins</button>
+        <button id="generics">Generics</button>
+        <button id="merging">Declaration Merging</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="textwriter.js"></script>
+    <script src="functions.js"></script>
+    <script src="zoo.js"></script>
+    <script src="mixins.js"></script>
+    <script src="generics.js"></script>
+    <script src="declaration-merging.js"></script>
+    <script>
+        function clickEvent(target, program) {
+            var element = document.getElementById(target);
+            element.addEventListener("click", function () {
+                program.run("output");
+            })
+        }
+
+        clickEvent("funcs", Functions.Program);
+        clickEvent("zoo", Zoo.Program);
+        clickEvent("mixins", Mixins.Program);
+        clickEvent("generics", Generics.Program);
+        clickEvent("merging", DeclarationMergingTest.Program);
+    </script>
+</body>
+</html>

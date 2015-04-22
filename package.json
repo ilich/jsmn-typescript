@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/ilich/jsmn-typescript/issues"
   },
-  "homepage": "https://github.com/ilich/jsmn-typescript"
+  "homepage": "https://github.com/ilich/jsmn-typescript",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-ts": "^4.0.1"
+  }
 }
