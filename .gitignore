@@ -31,5 +31,7 @@ node_modules
 *.map
 public/samples/*.js
 public/todomvc/*.js
+public/combine/*.js
+public/amd/scripts/modules/*.js
 
 *.sublime-*
