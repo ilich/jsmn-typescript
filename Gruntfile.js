@@ -1,7 +1,5 @@
 module.exports = function (grunt) {
 
-	var fs = require('fs');
-
 	grunt.initConfig({
 		ts: {
 			samples: {
@@ -46,4 +44,4 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-ts');
 
 	grunt.registerTask('default', ['ts']);
-}
+};
